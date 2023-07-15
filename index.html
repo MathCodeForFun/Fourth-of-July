@@ -33,8 +33,9 @@ Firework Show<br>
 </form>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
  <script>
- var year = document.getElementById("year").value;
+ 
  var page = function(){
+     var year = document.getElementById("year").value;
      var path = "https://mathcodeforfun.github.io/Fourth-of-July/" + year + "_Firework_show.html";
      $("#page").attr("href", path);
  };
