@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fourth of July Fireworks</title>
+        <style>
+            body {
+                color: white;
+                background-color: red;
+
+            }
+            select {
+                color: white;
+                background-color: blue;
+                border-color: white;
+            }
+            button {
+                color: white;
+                background-color: blue;
+                border-color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <form>
+<select id="year">
+        <option id="2022" value="2022">2022</option>
+        <option id="2023" value="2023">2023</option>
+</select>
+Firework Show<br>
+<br>
+    <a id="page"><button id="enter">enter</button></a>
+</form>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <script>
+ var year = document.getElementById("year").value;
+ var page = function(){
+     var path = "https://mathcodeforfun.github.io/Fourth-of-July/" + year + "_Firework_show.html"
+     $("#page").attr("href",path).value;
+ };
+ $("#enter").on("click", function(){
+     page();
+ });
+ 
+ </script>
+    </body>
+</html>
